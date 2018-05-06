@@ -1,0 +1,58 @@
+<div class="home" [ngClass]="{ 'nav-closed': !showNavMenu, 'nav-opened': showNavMenu }" style="overflow: hidden;">
+  <div class="nav-menu">
+    <div class="nav-title">Menu</div>
+    <a href="javascript:void(0)" class="nav-close" (click)="toggleNavMenu($event)">
+      <i class="icon ion-ios-close-empty icon32" ></i>
+    </a>
+    <ul class="nav-list">
+      <li class="nav-item">
+        <a href="/Todo">
+          <span>Todo</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="/Album">
+          <span>Album</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="/Day">
+          <span>Day</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="https://github.com/Marsian/nodejs" target="_blank">
+          <span>Github</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="https://www.linkedin.com/in/yanxi-wang-15592b55" target="_blank">
+          <span>LinkedIn</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="site-wrapper" (click)="closeNavMenu()">
+    <header class="main-header" style="background-image: url(assets/images/Waikiki.jpg)">
+      <nav class="main-nav overlay clearfix">
+        <a class="menu-button icon-menu" href="javascript:void(0)" (click)="toggleNavMenu($event)">
+          <span class="word">Menu</span>
+          <i class="icon ion-navicon" style="font-size: 27px;" ></i>
+        </a>
+      </nav>
+      <div class="main-header-content">
+        <div class="page-content">
+          <h1 class="page-title">Mars Wang</h1>
+          <h2 class="page-description">Web developer</h2>
+        </div>
+      </div>
+      <a href="javascript:void(0)" class="scroll-down" (click)="scrollDownPage()">
+        <i class="icon ion-chevron-down icon40" ></i>
+      </a>
+    </header>
+
+    <div style="background: #FAFAFA;"></div>
+  </div>
+
+</div>
